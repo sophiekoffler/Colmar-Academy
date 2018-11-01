@@ -1,0 +1,395 @@
+html {font-size: 16px;
+      font-family: "helvetica";
+      }
+body {background-color: white;
+      line-height: 1;
+      color:dimgray;
+      width:90%
+      margin:0 aut0;
+      border:lightgray solid 1px;}
+header, main, footer{
+  border-left:lightgray 3px solid;
+  border-right:lightgray 3px solid;}
+.mobile {display:none;}
+#learningM {display:none;}
+#thesisM {display:none;}
+.vertical {display: flex;
+          flex-direction: column;}
+@media only screen and (max-width:480px)
+{
+  #headerInfoD {display:none;}
+  .mobile {display:block;}
+}
+.mobile div {justify-content: space-around;
+            align-items: center;
+          height:4rem;}
+.horizontal {display: flex;
+            flex-direction: row;}
+.container {width:100%;
+          margin:0 auto;}
+h1 {font-size:3rem;
+    font-weight: bold;}
+h2 {font-size: 2.5rem;
+  font-weight: bold;}
+h3{font-size: 2rem;}
+h4{font-size: 1.5rem;}
+p {line-height:1.5;}
+#headerInfoD,#headerInfoM {height:4rem;width:100%;
+                  background-color:white;}
+#headerLogo {height:2rem;
+            align-items: center;
+            padding-left:1.5rem;}
+
+#headerInfoD{justify-content: space-between;
+            align-items: center;}
+.darkGrey{color:darkgrey;}
+#bannerImg {width:60%;
+            border:black solid 1px;
+            background-image: url("./../images/banner.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            margin-bottom: 2rem;
+            border:black solid 1px;
+            margin-right:1.5rem;}
+
+#bannerC {height:33rem;
+          background-color: darkgrey;
+          color:#222;
+          padding-left:1.5rem;
+          padding-top:2rem;}
+
+#bannerInfo {
+            width:40%;
+            justify-content: center;
+            padding-right:1rem;
+            }
+#h3,#bannerInfo p {margin-top:2rem; }
+#bannerC h3:last-of-type{padding-top:.5rem;}
+#bannerInfo p {text-align: center;
+              margin-top: 3rem;
+              padding:.5rem 0 .5rem 0;
+              background-color:slategray;
+              color:white;}
+
+@media only screen and (max-width:780px)
+{
+  #bannerC {flex-direction: column;
+            height:auto;
+            padding:0;
+          color: #222;
+          text-align:center;
+          border:none;
+          overflow-x:hidden;}
+
+  #bannerImg {width:100%;
+    margin-bottom:0;
+  height:25rem;
+  background-size:cover;
+  border:solid black 0px;
+               }
+  #bannerInfo {
+            width:100%;
+            text-align: center;
+            padding-top:0rem;
+            padding:0;
+            margin-top:2rem;
+            margin-right:4rem;
+            margin:0;
+        margin:2rem 1rem 2rem 0rem ;}
+#bannerInfo p {
+    width:70%;
+    margin:0 auto;}
+  #h3 {margin:1rem 0 2rem 0;}
+  h3 {font-size: 1.5rem;
+      padding-top:1.5rem;}
+}
+@media only screen and (max-width:480px){
+    #bannerC {flex-direction: column;
+              height:auto;
+              padding:0;
+            color: #222;}
+
+    #bannerImg {width:100%;
+    height:15rem;
+    background-size:cover;
+    border:solid black 0px;}
+    #bannerInfo{
+      align-items: center;
+      width:95%;
+      padding-top:1rem;
+      padding-bottom:1rem;
+      margin:0 auto;
+      height:auto;
+    }
+    h1 {font-size: 2rem;
+      font-weight: bold;}
+    h3 {font-size: 1.3rem;
+      }
+      #bannerInfo h3 {margin:0}
+    #bannerInfo p{margin:1.5rem 0 0 0;
+            text-align: center;
+              padding:.5 2rem .5 2rem;}
+              }
+nav li {margin-right:1rem;}
+nav li:last-of-type{margin-right:0}
+nav {margin-right:24px;}
+
+#information {padding-top:2rem;
+              padding-left:1.5rem;
+              background-color:white;}
+#infoLeft {width:60%;
+            margin-right:2rem;}
+#infoLeftImg {
+   background-image:url("./../images/information-main.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:22rem;}
+#by {margin:2rem 0 2rem 0;}
+#information h2 {margin:2rem 0 1.5rem 0;}
+#infoRight {width:40%;}
+#i1Info,#i2Info,#i3Info {justify-content: center;
+      padding-right:2rem;
+      width:65%;}
+
+#i1Img {background-image: url("./../images/information-orientation.jpg" );}
+#i2Img {background-image: url("./../images/information-campus.jpg" );}
+#i3Img {background-image: url("./../images/information-guest-lecture.jpg" );}
+
+.info {flex-direction: row;
+  justify-content: space-between;
+        padding:1rem 0 1rem 1rem;}
+
+.infoImg{margin:1rem;
+  width:35%;
+  height:auto;
+  border:black 1px solid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:block;}
+  .infoImg {width:100%;
+          height:10rem;
+          background-size:cover;
+          margin:0;}
+
+#infoRight p {padding:.5rem 0 .5rem 0;
+          color: #222;}
+
+.g {background-color:gray;
+    color:black;}
+
+@media only screen and (max-width:780px)
+{
+  #information {padding:1rem 0 1rem 0;
+                }
+  #infoLeft {justify-content: center;
+            }
+
+  #infoLeftImg {background-position: center;
+                border:none;}
+  .info {flex-direction: column;
+      justify-content: space-around;
+        align-items: center;
+        height:auto;
+        margin-right:1rem;
+
+        padding:0px;
+        background-color:white;
+        }
+  .infoT {padding-left:1rem;}
+  .infoImg {width:100%;
+            height:18rem;
+            background-size: cover;
+            border:none;
+            }
+  #information p {font-size: .9rem;}
+  #information h3 {padding-top:.5rem;}
+  .infoInfo {text-align:center;
+    margin-bottom:1rem;}
+  #i1Info,#i2Info,#i3Info {
+        padding-right:0rem;}
+}
+
+@media only screen and (max-width:480px){
+  .infoImg {height: 12rem;
+      background-size: cover;
+            width:100%;
+        }
+  #infoLeft {display:none;}
+  #infoRight {width:100%;
+              margin-bottom:0;
+              padding-bottom:0;
+              }
+  #information{padding:1rem 1rem 1rem 1rem;
+              background-color:white;
+          }
+  #i3Img {display:block;}
+  .info {flex-direction: column;
+        width:100%;
+        background-color:white;
+        height:auto;
+        overflow:hidden;
+        padding-bottom:2rem ;}
+}
+
+.infoInfo {
+  padding-right:2rem;
+  margin-right:1rem;
+  width:100%;}
+  #i1Info,#i2Info,#i3Info {
+        padding-right:1rem;
+        margin-right:1rem;
+        padding-left:1rem;
+        width:100%;}
+  .info h3 {color:#222;
+      }
+  .info p {color:gray;
+          font-size:.85rem;}
+  .info a {color:blue;}
+  .imgC {width:100%;}
+
+
+#learning {margin-top:2rem;
+          background-color: lightgray;
+      text-align: center;}
+
+#learning h2 {padding:2rem 0 2rem 0;
+              text-align: center;}
+#learning h3{color: #222;
+              padding-bottom: 1rem;}
+
+
+#r1,.cRow {flex-wrap: wrap;}
+.cRow {margin:0 4.5rem 0 4.5rem;
+      justify-content: space-between;
+      height:56rem;
+    margin-bottom: 2rem;}
+.course {background-color: white;
+          width:31%;
+          justify-content: flex-start;
+          align-items: flex-start;
+          align-content: flex-start;
+          margin-bottom: 2rem;
+          }
+#c5,#c6{margin-bottom:0;}
+
+.cImg {  width: 100%;
+        height:50%;
+        background-size:cover;
+        background-repeat: no-repeat;}
+
+#cImg1 {background-image: url("./../images/course-software.jpg");}
+#cImg2 {background-image: url("./../images/course-computer-art.jpg");}
+#cImg3 {background-image: url("./../images/course-design.jpg");}
+#cImg4 {background-image: url("./../images/course-data.jpg");}
+#cImg5 {background-image: url("./../images/course-business.jpg");}
+#cImg6 {background-image: url("./../images/course-marketing.jpg");}
+.course:last-of-type{margin-right:0rem;}
+
+.courseInfo {padding:1rem 0 1.5rem 1rem;
+            text-align: left;}
+.courseInfo h4:first-of-type {padding:.5rem 0 .5rem 0}
+.courseInfo h4 {line-height: 1.2;}
+
+@media only screen and (max-width:480px){
+
+  #learning {display:none;}
+  #learningM {display:block;
+    color: #222;
+              margin:0 1rem 2rem 1rem;
+            border-top:lightgray 1px solid;}
+  #learningM h2 {text-align: center;
+            padding:2rem 0 1rem 0;}
+  #learningM h4 {background-color:lightgray;
+              padding:1rem 0 1rem 1rem;
+              margin-bottom:.5rem;}
+  #learning h4:last-of-type {margin-bottom: 0;}
+}
+
+@media only screen and (max-width:780px){
+  #learning {margin-top:0;}
+  .courseInfo {padding-right:1rem;}
+  .courseInfo h3{padding:0;}
+  .courseInfo h4:last-of-type{padding:0;}
+  .course {width:48%;
+}
+
+  .course {height: auto;}
+  .cRow {height:80rem;
+        margin:0 1.5rem 0 1.5rem;
+        padding-bottom:2rem;
+    }
+  #learning h4{font-size: 1rem;}
+}
+
+#thesisC {align-items: center;background:white;
+    color:gray;}
+#thesisC h1{text-align: center;
+            color: #222;
+          padding:2rem 0 2rem 0;}
+#thesis h3 {color: #222;
+            padding:0 0 1rem 0;}
+#leftThesis {width:60%;
+            margin-left:1.5rem;
+            padding-right:1.5rem;}
+#rightThesis {width:40%;
+              }
+#leftThesis h3{padding:1.5rem 0 .5rem 0}
+#leftThesis p{margin-bottom:2rem;}
+
+#tR1Img,#tR2Img {width:35%;
+        height:auto;
+        border:black solid 1px;}
+#tR1Img {background-image: url("./../images/thesis-fisma.jpg" );
+  background-size: cover;
+  background-repeat: no-repeat;}
+#tR1,#tR2 { padding:1rem 0 1rem 1rem;
+            background-color: lightgray;
+           height: 13rem;}
+#tR1 {margin-bottom: 1rem;}
+#tR2Img {background-image: url("./../images/thesis-now-and-then.jpg");
+  background-size: cover;}
+
+@media only screen and (max-width:780px){
+#thesis {flex-direction: column;
+          margin:0 1rem 1rem 1rem;}
+#leftThesis {width:100%;
+            margin-left: 0rem;
+            padding-left: 0;
+            margin-right:0;
+            padding-right:0rem;}
+#rightThesis {width:100%;}
+#thesisC h1 {padding: 1rem 0 0rem 0;}
+#thesis video {height:15rem;
+                width:90%;
+                margin-top:1rem;}
+  #thesisM {display: none;}
+  #leftThesis h3 {text-align: center;}
+}
+  video {background-color: lightgray;
+          width:100%;
+          height:35rem;
+          margin:0 auto;
+          }
+
+footer p {padding:1rem 0 3rem 1.5rem;}
+footer {background-color:white;
+                  color: #222;}
+
+@media only screen and (max-width:480px){
+  #thesis {display:none;}
+  #thesisM {display:block;}
+  #thesisM video {width:auto;
+          margin-top:1rem;
+          height:auto;}
+  footer {margin-top:1.5rem;
+        background-color:white;
+        color:dimgray;
+        padding:1rem 0 0rem 0;
+        margin-bottom: 0rem;
+        font-size: .85rem;}
+    #thesisC {border-top:lightgray 1px solid;}
+}
+.border {border:black 1px solid;}
+.tInfo {width:65%;
+        padding-left:1rem;
+      justify-content: center;}
